@@ -66,8 +66,8 @@ class PigLatinizer
     individual_word.join(" ")
   end
 
-  def piglatinize(phrase)
-    word_array = phrase.split(" ")
+  def piglatinize(input_string)
+    word_array = input_string.split(" ")
     if word_array.count > 1
       # ind_word = []
       # word_array.each do |word|
@@ -84,7 +84,7 @@ class PigLatinizer
       # end
       # ind_word.join(" ")
     else
-      piglatinize_word(phrase)
+      piglatinize_word(input_string)
     end
   end
 end
