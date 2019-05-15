@@ -6,8 +6,8 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    if word.match(/\A(a|e|i|o|u|y)/)
-      return word + "way"
+    if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
+      word + "way"
     else
       word_array = word.split("")
       con = []
