@@ -77,7 +77,16 @@ class PigLatinizer
         con << letter_array.shift
       end
       letter_array.join("") + con.join("") + "ay"
+    end
+  end
 
+  def piglatinize(phrase)
+    word_array = phrase.split(" ")
+    if word_array.count > 1
+
+    else
+      piglatinize_word(phrase)
+    end
   end
 
 
