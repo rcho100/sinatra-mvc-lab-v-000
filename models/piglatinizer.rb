@@ -19,7 +19,7 @@ class PigLatinizer
     #     word_array << con
     #   end
     #
-    # end
+    end
 
   end
 
