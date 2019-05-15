@@ -5,17 +5,30 @@ class PigLatinizer
     @phrase = phrase
   end
 
-  def piglatinize(word)
-    if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
-      word + "way"
-    else
-      word_array = word.split("")
-      con = []
-      until word_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
-        con << word_array.shift
+  def piglatinize(words)
+    word_array = words.split(" ")
+
+    if word_array.count > 1
+      ind_word = []
+      word_array.each do |word|
+        word
       end
-      word_array.join("") + con.join("") + "ay"
+    else
+      if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
+        word + "way"
+      else
+        letter_array = word.split("")
+        con = []
+        until letter_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
+          con << letter_array.shift
+        end
+        letter_array.join("") + con.join("") + "ay"
+      end
     end
+
+
   end
+
+
 
 end
