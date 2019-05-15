@@ -12,7 +12,7 @@ class PigLatinizer
     else
       word_array = word.split("")
       con = []
-      unless word_array.first.match(/\A(a|e|i|o|u|y)/)
+      unless word_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
 
         con << word_array.shift
       end
