@@ -6,7 +6,6 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    binding.pry
     if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
       word + "way"
     else
