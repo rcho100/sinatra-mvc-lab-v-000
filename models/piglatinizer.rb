@@ -11,7 +11,6 @@ class PigLatinizer
     else
       word_array = word.split("")
       con = []
-      binding.pry
       until word_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
 
         con << word_array.shift
