@@ -7,7 +7,7 @@ class PigLatinizer
 
   def piglatinize(word)
     binding.pry
-    word = []
+    word
     # if word.match(/\A(a|e|i|o|u|y)/)
     #   return word + "yay"
     # else
