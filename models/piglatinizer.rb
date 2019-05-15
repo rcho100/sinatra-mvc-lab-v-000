@@ -40,12 +40,7 @@
 
 class PigLatinizer
   def piglatinize(input_string)
-    word_array = input_string.split(" ")
-    if word_array.count > 1
-      piglatinize_sentence(input_string)
-    else
-      piglatinize_word(input_string)
-    end
+    input_string.split(" ").count > 1 ? piglatinize_sentence(input_string) : piglatinize_word(input_string)
   end
 
   def piglatinize_word(word)
