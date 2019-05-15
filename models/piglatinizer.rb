@@ -37,15 +37,16 @@
 class PigLatinizer
   def piglatinize_word(word)
     if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
-      word + "way"
+      word = word + "w"
     else
       letter_array = word.split("")
       con = []
       until letter_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
         con << letter_array.shift
       end
-      letter_array.join("") + con.join("") + "ay"
+      word = letter_array.join("") + con.join("")
     end
+    word << "ay"
   end
 
   def piglatinize_sentence(sentence)
