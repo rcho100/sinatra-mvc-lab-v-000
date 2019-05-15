@@ -5,9 +5,19 @@ class PigLatinizer
     @phrase = phrase
   end
 
-  def piglatinize(word)
+  # def piglatinize(word)
     binding.pry
-    word.match(/\A(a|e|i|o|u|y)/)
+  #   if word.match(/\A(a|e|i|o|u|y)/)
+  #     return word + "yay"
+  #   else
+  #     word_array = word.split("")
+  #     con = word_array.shift
+  #   end
+  #
+  # end
+
+  def piglatinize(word)
+    unless word.match
   end
 
 end
