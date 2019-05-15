@@ -23,10 +23,10 @@ class PigLatinizer
         end
       end
     else
-      if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
-        word + "way"
+      if words.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
+        words + "way"
       else
-        letter_array = word.split("")
+        letter_array = words.split("")
         con = []
         until letter_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
           con << letter_array.shift
