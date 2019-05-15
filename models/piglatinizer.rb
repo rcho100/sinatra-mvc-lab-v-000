@@ -12,14 +12,14 @@ class PigLatinizer
       ind_word = []
       word_array.each do |word|
         if word.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
-          word + "way"
+          ind_word << word + "way"
         else
           letter_array = word.split("")
           con = []
           until letter_array.first.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
             con << letter_array.shift
           end
-          letter_array.join("") + con.join("") + "ay"
+          ind_word << letter_array.join("") + con.join("") + "ay"
         end
       end
     else
