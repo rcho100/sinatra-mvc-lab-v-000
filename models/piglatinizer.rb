@@ -6,10 +6,11 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    # binding.pry
+    binding.pry
     # #
     # # # consonants = [B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Z,]
-    # # vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+
     # # if
     # #
     # # else
