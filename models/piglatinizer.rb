@@ -35,10 +35,5 @@ class PigLatinizer
         letter_array.join("") + con.join("") + "ay"
       end
     end
-
-
   end
-
-
-
 end
