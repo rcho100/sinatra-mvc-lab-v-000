@@ -6,21 +6,17 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    binding.pry
-    word
-    # if word.match(/\A(a|e|i|o|u|y)/)
-    #   return word + "yay"
-    # else
-    #   word_array = word.split("")
-    #   con = []
-    #   unless word_array.first.match(/\A(a|e|i|o|u|y)/)
-    #
-    #     con = word_array.shift
-    #     word_array << con
-    #   end
-    #
-    # end
+    if word.match(/\A(a|e|i|o|u|y)/)
+      return word + "yay"
+    else
+      word_array = word.split("")
+      con = []
+      unless word_array.first.match(/\A(a|e|i|o|u|y)/)
 
+        con << word_array.shift
+      end
+      word_array.join("") + con.join("")
+    end
   end
 
   def piglatinize(word)
