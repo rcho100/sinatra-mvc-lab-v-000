@@ -22,6 +22,7 @@ class PigLatinizer
           ind_word << letter_array.join("") + con.join("") + "ay"
         end
       end
+      ind_word.join(" ")
     else
       if words.match(/\A(a|A|e|E|i|I|o|O|u|U|y|Y)/)
         words + "way"
